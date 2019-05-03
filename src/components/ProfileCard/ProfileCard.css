@@ -1,0 +1,33 @@
+.ProfileCard {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 20%;
+}
+
+.image-circle {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.greeting {
+  font-size: 1em;
+  padding-bottom: 51px;
+}
+
+.username {
+  font-weight: 600;
+}
+
+.score {
+  margin-top: 20px;
+  font-size: 0.7em;
+}
+
+.result {
+  font-weight: 500;
+}
