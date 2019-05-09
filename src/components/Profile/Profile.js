@@ -17,7 +17,7 @@ class Profile extends Component {
                         <div className="card-title mb-4">
                             <div className="d-flex justify-content-start">
                                 <div className="image-container">
-                                    <img style={{width:"100px", height: "100px",  objectFit: "cover"}} src={`${process.env.REACT_APP_PUBLIC_URL}uploads/media/${profileImg}`} id="imgProfile" className="img-thumbnail" />
+                                    <img className="profileImage" alt="Profile Image" src={`${process.env.REACT_APP_PUBLIC_URL}uploads/media/${profileImg}`} />
                                 </div>
                                 <div className="userData ml-3">
                                     <h2 className="d-block">{username}</h2>

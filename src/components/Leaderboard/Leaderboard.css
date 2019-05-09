@@ -1,0 +1,21 @@
+.leaderboardImage {
+  opacity: 1;
+  display: inline-block;
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  padding: .25rem;
+  margin: .5rem;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.crown {
+  color: #6E0D25;
+}
+
+.leader {
+  font-weight: 600;
+}

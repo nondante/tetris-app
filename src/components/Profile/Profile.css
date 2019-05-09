@@ -3,10 +3,15 @@
   color: black;
 }
 
-.image {
+.profileImage {
   opacity: 1;
-  display: block;
+  display: inline-block;
   object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  padding: .25rem;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -20,12 +25,4 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.image-container:hover .image {
-  opacity: 0.3;
-}
-
-.image-container:hover .middle {
-  opacity: 1;
 }

@@ -18,18 +18,21 @@ class AppContainer extends Component {
     };
   }
 
-  async componentDidMount(){
+  async componentWillMount(){
     let data = await API.get(`${process.env.REACT_APP_APIURL}users/self`)
     let user = data.data.payload.user
+    this.setState({
+      profileImg: user.profileImage,
+      username: user.username,
+      email: user.email
+     })
+    console.log(user.username)
     let scoreData = await API.get(`${process.env.REACT_APP_APIURL}leaderboard/${user.username}`)
     let totalScore = scoreData.data.payload.totalScore
     let highScore = scoreData.data.payload.highScore
     this.setState({
-      profileImg: user.profileImage,
       totalScore,
-      highScore,
-      username: user.username,
-      email: user.email
+      highScore
      })
   }
 
